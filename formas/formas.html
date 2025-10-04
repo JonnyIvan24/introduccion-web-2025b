@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="./accion.html" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" id="nombre" value="Johnny"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" name="apellido" id="apellido"><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" name="edad" id="edad" min="12" max="40"><br><br>
+        
+        <textarea name="mensaje" rows="10" cols="30">Vamos a los pollos hermanos.</textarea><br>
+
+        <label for="carro">Carro</label><br>
+        <select name="carro">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+
+        <p>Seleccione un género:</p>
+        <input type="radio" id="hombre" name="genero" value="hombre" checked>
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">Mujer</label><br>
+
+        <p>Vehículo:</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="1">
+        <label for="vehicle1"> Tengo una bici</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="2">
+        <label for="vehicle2"> Tengo un carro</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="3">
+        <label for="vehicle3"> Tengo un bote</label><br><br>
+
+        <button type="button" onclick="alert('Hello Walter!')">Da clic!</button>
+        <input type="submit" value="Guardar">
+        <input type="reset" value="deshacer">
+    </form>
+</body>
+</html>
