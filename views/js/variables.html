@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        var a = "algún texto 'a'"
+        var b = 'algún texto "b"'
+        c = b + a // concatenación de strings
+
+        // númerico
+        var x = 5
+        var y = 2.3
+
+        console.log(x + y) // es la suma de números
+        console.log(x++)
+        console.log(x)
+        console.log(++y)
+        console.log(y)
+
+        // boolean
+        var f = true
+        var g = false
+
+        console.log(f && f)
+
+        // arreglo
+        var arrglo = ["hola", , 1, f, null]
+
+        console.log(arrglo[arrglo.length-1])
+
+        // Objeto
+        var persona = {
+            nombre: "juan",
+            apellido: "uribe",
+            intereses: ["html", "manejar"],
+            suscrito: true
+        }
+        console.log(persona.intereses[0])
+    </script>
+</body>
+</html>
