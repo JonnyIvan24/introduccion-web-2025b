@@ -36,3 +36,13 @@ p::first-line {
 a[target=_blank] {
     background-color: #F4FA58;
 }
+
+h2.a {
+    visibility: visible;
+    cursor: help;
+}
+
+
+h2.b {
+    display: none;
+}
