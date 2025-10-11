@@ -1,5 +1,5 @@
 /* selector descendiente */
 
-div p {
+div > p {
     background-color: #F4FA58;
 }
