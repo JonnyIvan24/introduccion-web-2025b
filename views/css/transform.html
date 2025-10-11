@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            transition: width 5s;
+        }
+        .a {
+            transform: rotate(20deg);
+        }
+        .b {
+            transform: scaleY(1.5);
+        }
+        div:hover {
+            width: 300px;
+        }
+        .c {
+            transition-timing-function: linear;
+        }
+        .d {
+            transition-timing-function: ease;
+        }
+        .e {
+            transition-timing-function: ease-in;
+        }
+        .f {
+            transition-timing-function: ease-out;
+        }
+        .g {
+            transition-timing-function: cubic-bezier(.08,1.01,.78,-0.71);
+        }
+    </style>
+</head>
+<body>
+    <div class="a"><p>Algún texto</p></div>
+    <div class="b"><p>Algún texto</p></div>
+
+    <div class="c"><p>linear</p></div>
+    <div class="d"><p>ease</p></div>
+    <div class="e"><p>ease-in</p></div>
+    <div class="f"><p>ease-out</p></div>
+    <div class="g"><p>ease-in-out</p></div>
+</body>
+</html>
