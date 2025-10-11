@@ -3,3 +3,36 @@
 div + p {
     background-color: #F4FA58;
 }
+
+
+/* pseudo-clase */
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+p::first-letter {
+    color: red;
+    font-size: xx-large;
+}
+
+/* pseudo-elemento */
+p::first-line {
+    color: blue;
+}
+
+/* selector de atributos */
+a[target=_blank] {
+    background-color: #F4FA58;
+}
