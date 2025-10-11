@@ -1,7 +1,14 @@
+/* variables globales en css */
+:root {
+    --primary-color: #fa9658;
+    --second-color: blue;
+}
+
+
 /* selector hermano adyacene  */
 
 div + p {
-    background-color: #F4FA58;
+    background-color: var(--primary-color);
 }
 
 
@@ -19,7 +26,7 @@ a:hover {
 }
 
 a:active {
-    color: blue;
+    color: var(--second-color);
 }
 
 p::first-letter {
@@ -34,7 +41,7 @@ p::first-line {
 
 /* selector de atributos */
 a[target=_blank] {
-    background-color: #F4FA58;
+    background-color: var(--primary-color);
 }
 
 h2.a {
