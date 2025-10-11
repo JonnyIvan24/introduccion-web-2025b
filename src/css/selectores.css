@@ -1,5 +1,5 @@
-/* selector general de hermanos  */
+/* selector hermano adyacene  */
 
-div ~ p {
+div + p {
     background-color: #F4FA58;
 }
