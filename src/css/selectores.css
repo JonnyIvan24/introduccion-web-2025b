@@ -1,5 +1,5 @@
-/* selector descendiente */
+/* selector general de hermanos  */
 
-div > p {
+div ~ p {
     background-color: #F4FA58;
 }
