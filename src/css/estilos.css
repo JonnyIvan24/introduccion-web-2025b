@@ -1,0 +1,27 @@
+ body {
+            background-color: blueviolet;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 20px;
+    background-image: -moz-linear-gradient(#F4FA58, #f70303);
+    background-color: #F4FA58;
+}
+
+#mi-parrafo {
+    text-align: center;
+}
+
+.mi-clase {
+    text-align: right;
+}
+
+.big {
+    font-size: 50px;
+}
