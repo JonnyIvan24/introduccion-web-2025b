@@ -25,11 +25,12 @@
 
         var misNumeros = [20,30,10,2,5]
 
-        misNumeros.forEach((numero, indice, misNumeros) => {
+        misNumeros.forEach(function (numero, indice) {
             document.write(numero)
             document.write(indice + ",")
         })
 
+        misNumeros.forEach(numero => console.log(numero))
     </script>
 </body>
 </html>
