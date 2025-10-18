@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        for (let paso = 0; paso < 6; paso++) {
+            console.log("paso: " + paso)
+        }
+
+        var n = 3
+        while (n < 3) {
+            n++
+            console.log(n)
+        }
+
+        do {
+            console.log(n)
+        } while (n < 3);
+
+        // iterador foreach
+
+        var misNumeros = [20,30,10,2,5]
+
+        misNumeros.forEach((numero, indice, misNumeros) => {
+            document.write(numero)
+            document.write(indice + ",")
+        })
+
+    </script>
+</body>
+</html>
