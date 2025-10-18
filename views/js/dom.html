@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
-    <h3 name="primer">Walter</h3>
-    <h3 class="clase">Hola</h3>
-    <h3 class="clase">Mundo</h3>
 </head>
 <body>
     <input type="text" id="1">
     <p>Párrafo</p>
+
+    <h3 name="primer">Walter</h3>
+    <h3 class="clase">Hola</h3>
+    <h3 class="clase">Mundo</h3>
+
+    <br>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">Fecha y hora</button>
+    <p id="demo"></p>
+    <br>
+
+    <input type="text" id="original" onkeyup="duplicar()">
+    <input type="text" id="duplicado">
+
+    <div
+        style="width: 120px; height: 20px; background-color: red;"
+        onmouseover="mouseOver(this)"
+        onmouseout="mouseOut(this)"
+    >
+        Doom
+    </div>
 
     <script>
 
@@ -24,6 +41,19 @@
 
         console.log(document.getElementsByName("primer"))
         console.log(document.getElementsByClassName("clase"))
+
+        function duplicar() {
+            var valor = document.getElementById("original").value
+            document.getElementById("duplicado").value = valor
+        }
+
+        function mouseOver(elemento) {
+            elemento.innerHTML = "Slayer"
+        }
+
+        function mouseOut(elemento) {
+            elemento.innerHTML = "Doom"
+        }
     </script>
 </body>
 </html>
