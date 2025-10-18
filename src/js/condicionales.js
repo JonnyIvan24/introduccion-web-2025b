@@ -15,3 +15,16 @@ if (edad >= 0 && edad < 20) {
 } else {
     console.log("Eres mayor de 40 años")
 }
+
+switch (new Date().getDay()) {
+    case 6:
+        text = "Hoy es sábado"
+        break;
+    case 0:
+        text = "Hoy es domingo"
+        break;
+    default:
+        text = "Hoy es un día entre semana"
+}
+
+document.write(text)
