@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <h3 name="primer">Walter</h3>
+    <h3 class="clase">Hola</h3>
+    <h3 class="clase">Mundo</h3>
+</head>
+<body>
+    <input type="text" id="1">
+    <p>Párrafo</p>
+
+    <script>
+
+        var input = document.getElementById('1')
+        input.value = 'hola'
+        console.log(input)
+        
+        var parrafos = document.getElementsByTagName('p') 
+        console.log(parrafos)
+        parrafos[0].innerHTML = "hola"
+
+        console.log(document.getElementsByName("primer"))
+        console.log(document.getElementsByClassName("clase"))
+    </script>
+</body>
+</html>
