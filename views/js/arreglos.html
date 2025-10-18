@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <script>
+
+        var frutas = ["platano", "naranja", "manzana", "pera"]
+
+        console.log(frutas.pop())
+        
+        console.log(frutas.length)
+        console.log(frutas.push("toronja"))
+
+        console.log(frutas.shift())
+
+        /* 
+        * primer parametro es donde va a comenzar a eliminar
+        * segundo parametro (opcional) son cuantos elementos quiero que elimine
+        * los siguientes parámetros son los elementos que van a sustituir los eliminados
+        */
+        // console.log(frutas.splice(2, 1, "toronja"))
+
+        console.log(frutas.toString())
+
+        var verduras = ["chayote", 'jitomate', "zanahoria"]
+
+        console.log(frutas.concat(verduras))
+        console.log(frutas.sort())
+        console.log(frutas.reverse())
+
+        // filtrar
+
+        var numeros = [2,10,20,3,50,100]
+
+        // var x = numeros.filter(numero => numero > 20)
+
+        var x = numeros.filter(mayorQueVeinte)
+
+        console.log(x)
+
+        function mayorQueVeinte(value) {
+            return value > 20
+        }
+    </script>
+</body>
+</html>
